@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Navbar from "@/components/Navbar";
+import BankLogo from "@/components/BankLogo";
 import { creditCards } from "@/data/cards";
 import { Star, ArrowLeft, ExternalLink, CheckCircle, XCircle } from "lucide-react";
 
@@ -44,11 +45,16 @@ const CardDetail = () => {
           <div className="lg:col-span-1">
             <Card className="sticky top-8">
               <CardHeader>
-                <img 
-                  src={card.image} 
-                  alt={card.name}
-                  className="w-full h-48 object-cover rounded-lg mb-4"
-                />
+                <div className="relative">
+                  <img 
+                    src={card.image} 
+                    alt={card.name}
+                    className="w-full h-48 object-cover rounded-lg mb-4"
+                  />
+                  <div className="absolute top-2 right-2">
+                    <BankLogo issuer={card.issuer} size="md" className="bg-white rounded p-2 shadow-sm" />
+                  </div>
+                </div>
                 <CardTitle className="text-xl">{card.name}</CardTitle>
                 <div className="flex items-center justify-between">
                   <div className="text-lg font-medium text-gray-600">{card.issuer}</div>
@@ -227,11 +233,16 @@ const CardDetail = () => {
               .map((similarCard) => (
                 <Card key={similarCard.id} className="hover:shadow-lg transition-all duration-300">
                   <CardHeader>
-                    <img 
-                      src={similarCard.image} 
-                      alt={similarCard.name}
-                      className="w-full h-32 object-cover rounded-lg mb-3"
-                    />
+                    <div className="relative">
+                      <img 
+                        src={similarCard.image} 
+                        alt={similarCard.name}
+                        className="w-full h-32 object-cover rounded-lg mb-3"
+                      />
+                      <div className="absolute top-2 right-2">
+                        <BankLogo issuer={similarCard.issuer} size="sm" className="bg-white rounded p-1 shadow-sm" />
+                      </div>
+                    </div>
                     <CardTitle className="text-lg">{similarCard.name}</CardTitle>
                   </CardHeader>
                   <CardContent>

@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Label } from "@/components/ui/label";
 import Navbar from "@/components/Navbar";
+import BankLogo from "@/components/BankLogo";
 import { creditCards, categories, issuers } from "@/data/cards";
 import { Search, Star, Filter } from "lucide-react";
 
@@ -164,11 +165,16 @@ const AllCards = () => {
               {filteredCards.map((card) => (
                 <Card key={card.id} className="hover:shadow-lg transition-all duration-300">
                   <CardHeader>
-                    <img 
-                      src={card.image} 
-                      alt={card.name}
-                      className="w-full h-40 object-cover rounded-lg mb-4"
-                    />
+                    <div className="relative">
+                      <img 
+                        src={card.image} 
+                        alt={card.name}
+                        className="w-full h-40 object-cover rounded-lg mb-4"
+                      />
+                      <div className="absolute top-2 right-2">
+                        <BankLogo issuer={card.issuer} size="sm" className="bg-white rounded p-1 shadow-sm" />
+                      </div>
+                    </div>
                     <div className="flex justify-between items-start">
                       <CardTitle className="text-lg leading-tight">{card.name}</CardTitle>
                       <div className="flex items-center">

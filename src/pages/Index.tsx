@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
+import BankLogo from "@/components/BankLogo";
 import { creditCards, categories } from "@/data/cards";
 import { Search, Star, TrendingUp, Shield, CreditCard } from "lucide-react";
 
@@ -113,11 +114,16 @@ const Index = () => {
             {featuredCards.map((card) => (
               <Card key={card.id} className="hover:shadow-lg transition-all duration-300">
                 <CardHeader>
-                  <img 
-                    src={card.image} 
-                    alt={card.name}
-                    className="w-full h-40 object-cover rounded-lg mb-4"
-                  />
+                  <div className="relative">
+                    <img 
+                      src={card.image} 
+                      alt={card.name}
+                      className="w-full h-40 object-cover rounded-lg mb-4"
+                    />
+                    <div className="absolute top-2 right-2">
+                      <BankLogo issuer={card.issuer} size="sm" className="bg-white rounded p-1 shadow-sm" />
+                    </div>
+                  </div>
                   <div className="flex justify-between items-start">
                     <CardTitle className="text-lg">{card.name}</CardTitle>
                     <div className="flex items-center">

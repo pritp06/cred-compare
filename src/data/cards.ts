@@ -16,7 +16,7 @@ export const creditCards: CreditCard[] = [
     pros: ["Good for daily use", "Affordable"],
     cons: ["No lounge access"],
     category: ["shopping", "fuel"],
-    image: "/placeholder.svg?height=200&width=320&text=SBI+SimplySAVE",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=320&h=200&fit=crop",
     apply_url: "https://www.sbicard.com/en/personal/credit-cards/simplysave.page",
     rewards: "10x on dining, 5x on groceries",
     eligibility: "₹3 Lakh annual income",
@@ -38,7 +38,7 @@ export const creditCards: CreditCard[] = [
     pros: ["Premium benefits", "Good reward rate", "Lounge access"],
     cons: ["High annual fee", "Income requirement"],
     category: ["travel", "premium"],
-    image: "/placeholder.svg?height=200&width=320&text=HDFC+Regalia",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=320&h=200&fit=crop",
     apply_url: "https://www.hdfcbank.com/personal/pay/cards/credit-cards/regalia",
     rewards: "4x points on all spends",
     eligibility: "₹6 Lakh annual income",
@@ -60,7 +60,7 @@ export const creditCards: CreditCard[] = [
     pros: ["Good for online shopping", "Movie vouchers", "Low fee"],
     cons: ["Limited offline benefits"],
     category: ["cashback", "shopping"],
-    image: "/placeholder.svg?height=200&width=320&text=Axis+MY+ZONE",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=320&h=200&fit=crop",
     apply_url: "https://www.axisbank.com/retail/cards/credit-card/my-zone",
     rewards: "2% cashback online",
     eligibility: "₹3 Lakh annual income",
@@ -82,7 +82,7 @@ export const creditCards: CreditCard[] = [
     pros: ["No annual fee", "Great for Amazon users", "Bill payment rewards"],
     cons: ["Limited offline benefits", "Amazon Prime requirement for max benefits"],
     category: ["cashback", "shopping"],
-    image: "/placeholder.svg?height=200&width=320&text=Amazon+Pay+ICICI",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=320&h=200&fit=crop",
     apply_url: "https://www.icicibank.com/personal-banking/cards/credit-card/amazon-pay",
     rewards: "5% on Amazon, 2% on bills",
     eligibility: "₹3 Lakh annual income",
@@ -104,7 +104,7 @@ export const creditCards: CreditCard[] = [
     pros: ["Premium benefits", "High reward rate", "Global acceptance"],
     cons: ["High fees", "Income requirement"],
     category: ["travel", "premium"],
-    image: "/placeholder.svg?height=200&width=320&text=SBI+Elite",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=320&h=200&fit=crop",
     apply_url: "https://www.sbicard.com/en/personal/credit-cards/elite.page",
     rewards: "5x on dining & hotels",
     eligibility: "₹7.5 Lakh annual income",
@@ -126,7 +126,7 @@ export const creditCards: CreditCard[] = [
     pros: ["Fuel benefits", "Dining offers", "Easy approval"],
     cons: ["Low reward rate", "Limited premium benefits"],
     category: ["fuel", "shopping"],
-    image: "/placeholder.svg?height=200&width=320&text=Kotak+League",
+    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=320&h=200&fit=crop",
     apply_url: "https://www.kotak.com/en/personal-banking/cards/credit-cards.html",
     rewards: "1% cashback on all spends",
     eligibility: "₹4 Lakh annual income",
@@ -173,26 +173,26 @@ export const issuers: CardIssuer[] = [
   {
     id: "sbi",
     name: "SBI Card",
-    logo: "/placeholder.svg?height=40&width=80&text=SBI"
+    logo: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=80&h=40&fit=crop"
   },
   {
     id: "hdfc",
     name: "HDFC Bank",
-    logo: "/placeholder.svg?height=40&width=80&text=HDFC"
+    logo: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=80&h=40&fit=crop"
   },
   {
     id: "icici",
     name: "ICICI Bank",
-    logo: "/placeholder.svg?height=40&width=80&text=ICICI"
+    logo: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=80&h=40&fit=crop"
   },
   {
     id: "axis",
     name: "Axis Bank",
-    logo: "/placeholder.svg?height=40&width=80&text=Axis"
+    logo: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=80&h=40&fit=crop"
   },
   {
     id: "kotak",
     name: "Kotak Bank",
-    logo: "/placeholder.svg?height=40&width=80&text=Kotak"
+    logo: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=80&h=40&fit=crop"
   }
 ];
