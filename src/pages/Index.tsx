@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -7,6 +6,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Navbar from "@/components/Navbar";
 import BankLogo from "@/components/BankLogo";
+import UserMenu from "@/components/UserMenu";
 import { creditCards, categories } from "@/data/cards";
 import { Search, Star, TrendingUp, Shield, CreditCard } from "lucide-react";
 
@@ -16,7 +16,30 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      <Navbar />
+      {/* Updated Navbar with User Menu */}
+      <nav className="bg-white shadow-sm border-b">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
+              <Link to="/" className="text-2xl font-bold text-blue-600">
+                CardCompare
+              </Link>
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              <Link to="/cards" className="text-gray-700 hover:text-blue-600">
+                All Cards
+              </Link>
+              <Link to="/compare" className="text-gray-700 hover:text-blue-600">
+                Compare
+              </Link>
+              <Link to="/blog" className="text-gray-700 hover:text-blue-600">
+                Blog
+              </Link>
+            </div>
+            <UserMenu />
+          </div>
+        </div>
+      </nav>
       
       {/* Hero Section */}
       <section className="relative py-20 px-4 sm:px-6 lg:px-8">
